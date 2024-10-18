@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokear - Sobre Nosotros</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" style="border-bottom: 2px solid #37a2ff;">
+
+        <div class="container">
+            <a href="/" class="logo">
+                <img class="display-pc" src="./img/stokear_logo.png" alt="Logo de Stokear">
+                <img class="display-mobile" src="./img/stokear-logo-mobile.png" alt="Logo de Stokear">
+            </a>
+
+            <nav class="navbar display-pc">
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <button onclick="scrolearA('contacto')">Contactanos</button>
+            </nav>
+
+            <nav class="nav-mobile display-mobile">
+                <div class="bars" onclick="changeBars(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-content">
+                    <a href="nosotros.html">Sobre Nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <button onclick="scrolearA('contacto')">Contactanos</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="nosotros nosotros-empresa container">
+        <div class="nos-contenido">
+            <h2 class="subtitulo">Nuestra Empresa</h2>
+            <p class="texto-gris">Stokear es un fruto de la búsqueda de la perfección y la calidad, luego de alcanzar el liderazgo en la fabricación y provisión de soluciones de seguridad industrial al exigente mercado productivo argentino. <br>Contamos con una basta experiencia en el diseño, desarrollo y fabricación de elementos de protección para el sector industrial.</p>
+        </div>
+
+        <div class="nos-imagen">
+            <img src="/img/nosotros-02.png" alt="">
+            <div class="nos-imagen-after">
+                <img src="/img/recurso_nosotros.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="nosotros nosotros-servicio container">
+        <div class="nos-contenido">
+            <h2 class="subtitulo">Nuestro Servicio</h2>
+            <p class="texto-gris">Nos caracterizamos por nuestra eficiencia y calidad de servicio ofreciendo en toda nuestra gama de productos, diversas cualidades que nos distinguen y garantizan brindando una total conformidad.
+                <br>
+                Contando con todo nuestro asesoramiento para seleccionar el producto que mejor se adecue a su requerimientos; ellos por ser fabricados bajo estándares internacionales, le brindan un alto rendimiento en el uso industrial. </p>
+        </div>
+
+        <div class="nos-imagen">
+            <img src="/img/nosotros-01.png" alt="">
+            <div class="nos-imagen-after">
+                <img src="/img/recurso_nosotros.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="nosotros-clientes container">
+        <h2 class="subtitulo">Algunos de Nuestros Clientes</h3>
+        <div class="clientes-contenedor">
+            <img src="/img/logo-cliente-01.png" alt="Logo 1" class="carousel-item">
+            <img src="/img/logo-cliente-02.png" alt="Logo 2" class="carousel-item">
+            <img src="/img/logo-cliente-03.png" alt="Logo 3" class="carousel-item">
+            <img src="/img/logo-cliente-04.png" alt="Logo 4" class="carousel-item">
+            <img src="/img/logo-cliente-05.png" alt="Logo 5" class="carousel-item">
+            <img src="/img/logo-cliente-06.png" alt="Logo 6" class="carousel-item">
+            <img src="/img/logo-cliente-07.png" alt="Logo 7" class="carousel-item">
+            <img src="/img/logo-cliente-08.png" alt="Logo 8" class="carousel-item">
+            <img src="/img/logo-cliente-09.png" alt="Logo 9" class="carousel-item">
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <img class="separador-footer display-pc" src="img/separador-footer.png" alt="">
+
+
+        <div class="footer-content container">
+            <div class="footer-left">
+                <a href="/"><img src="/img/stokear-logo-blanco.png" alt="Logo Stokear Blanco"></a>
+                
+                <div>
+                    <p>Email: stokear@gmail.com</p>
+                    <p>Tel.: +54 9 11 6378 9279</p>
+                </div>
+                <p class="subtexto">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-right">
+                <div>
+                    <a href="/">Inicio</a>
+                    <a href="/productos.html">Productos</a>
+                </div>
+                <p class="subtexto display-mobile">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+                <a target="_blank" class="subtexto" href="https://juancruzbolatti.com">Página Web desarrollada por <span>Juan Bolatti</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

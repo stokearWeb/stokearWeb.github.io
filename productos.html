@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokear - Productos</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header" style="border-bottom: 2px solid #ffd863;">
+
+        <div class="container">
+            <a href="/" class="logo">
+                <img class="display-pc" src="./img/stokear_logo.png" alt="Logo de Stokear">
+                <img class="display-mobile" src="./img/stokear-logo-mobile.png" alt="Logo de Stokear">
+            </a>
+
+            <nav class="navbar display-pc">
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <button onclick="scrolearA('contacto')">Contactanos</button>
+            </nav>
+
+            <nav class="nav-mobile display-mobile">
+                <div class="bars" onclick="changeBars(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-content">
+                    <a href="nosotros.html">Sobre Nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <button onclick="scrolearA('contacto')">Contactanos</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="producto-boton display-pc-block">
+        <a onclick="scrolearA('contacto')" class="boton">
+            <p>Contactanos</p>
+            <div></div>
+        </a>
+    </div>
+
+    <div class="producto-hero">
+        <img src="img/productos-banner.png" alt="">
+    </div>
+
+    <section class="producto-seccion container">
+        <div class="contenido">
+            <h3>Indumentaria de Trabajo</h3>
+            <ul>
+                <li class="texto-gris">Camisas</li>
+                <li class="texto-gris">Remeras</li>
+                <li class="texto-gris">Pantalones</li>
+                <li class="texto-gris">Mamelucos</li>
+                <li class="texto-gris">Mamelucos Térmicos</li>
+                <li class="texto-gris">Buzos</li>
+                <li class="texto-gris">Ropa Térmica</li>
+            </ul>
+
+        </div>
+
+        <div class="imagen">
+            <img src="img/producto-pagina-02.png" alt="">
+        </div>
+    </section>
+
+    <section class="producto-seccion-triple container">
+        <div class="card" id="indumentaria">
+            <div class="imagen">
+                <img src="img/producto-pagina-01.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Protección de Mano</h3>
+                <ul>
+                    <li class="texto-gris">Guantes Descarne</li>
+                    <li class="texto-gris">Guantes Vaqueta</li>
+                    <li class="texto-gris">Guantes p.v.c</li>
+                    <li class="texto-gris">Guantes Nitrilo</li>
+                    <li class="texto-gris">Guantes Algodón</li>
+                    <li class="texto-gris">Guantes Alta Temperatura</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="calzado">
+            <div class="imagen">
+                <img src="img/producto-pagina-03.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Calzado y Protección</h3>
+                <ul>
+                    <li class="texto-gris">Botín</li>
+                    <li class="texto-gris">Zapatos</li>
+                    <li class="texto-gris">Botas de Goma</li>
+                    <li class="texto-gris">Polainas</li>
+                    <li class="texto-gris">Rodilleras</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagen">
+                <img src="img/producto-pagina-09.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Protección Corporal y Ergonomía</h3>
+                <ul>
+                    <li class="texto-gris">Delantales p.v.c</li>
+                    <li class="texto-gris">Delantales Descarne</li>
+                    <li class="texto-gris">Fajas Lumbares</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="producto-seccion producto-izq container">
+
+        <div class="contenido" id="cascos">
+            <h3>Protección Craneana</h3>
+            <ul>
+                <li class="texto-gris">Cascos</li>
+                <li class="texto-gris">Cascos con protección auditiva</li>
+                <li class="texto-gris">Cascos con protección facial</li>
+                <li class="texto-gris">Casco con protección para soldador</li>
+                <li class="texto-gris">Protección en descarne para soldador</li>
+            </ul>
+        </div>
+
+        <div class="imagen">
+            <img src="img/producto-pagina-05.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="producto-seccion-triple container">
+        <div class="card" id="respiratoria">
+            <div class="imagen">
+                <img src="img/producto-pagina-04.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Protección Respiratoria y Auditiva</h3>
+                <ul>
+                    <li class="texto-gris">Mascarillas Descartables</li>
+                    <li class="texto-gris">Semi-mascaras con Filtros</li>
+                    <li class="texto-gris">Mascaras Faciales con Filtros</li>
+                    <li class="texto-gris">Equipos Autónomos</li>
+                    <li class="texto-gris">Protección Auditiva</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="visual">
+            <div class="imagen">
+                <img src="img/producto-pagina-06.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Protección Visual</h3>
+                <ul>
+                    <li class="texto-gris">Anteojos transparentes y color</li>
+                    <li class="texto-gris">Anteojos para alta temperatura</li>
+                    <li class="texto-gris">Antiparra P.V.C</li>
+                    <li class="texto-gris">Antiparra panorámica en caucho</li>
+                    <li class="texto-gris">Antiparra para soldador</li>                
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="facial">
+            <div class="imagen">
+                <img src="img/producto-pagina-07.png" alt="">
+            </div>
+            <div class="contenido">
+                <h3>Protección Facial</h3>
+                <ul>
+                    <li class="texto-gris">Mascaras transparentes y color</li>
+                    <li class="texto-gris">Mascara malla tejida de hierro</li>
+                    <li class="texto-gris">Mascara para soldador</li>
+                    <li class="texto-gris">Mascara para <br> soldador fotosensible</li>
+                    <li class="texto-gris">Mascara para soldadura eléctrica</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="producto-seccion container">
+        <div class="contenido" id="senias">
+            <h3>Señalización</h3>
+            <ul>
+                <li class="texto-gris">Cartelería de alto impacto</li>
+                <li class="texto-gris">Conos de peligro</li>
+                <li class="texto-gris">Cintas de señalización</li>
+                <li class="texto-gris">Arnés antiácida</li>
+                <li class="texto-gris">Cadenas plásticas</li>
+            </ul>
+        </div>
+
+        <div class="imagen">
+            <img src="img/producto-pagina-08.png" alt="">
+        </div>
+    </section>
+    
+    <div class="display-mobile container" style="margin-top: 3vh;">
+        <a onclick="scrolearA('contacto')" class="boton">
+            <p>Contactanos</p>
+            <div></div>
+        </a>
+    </div>
+
+    <footer class="footer footer-producto">
+
+        <img class="separador-footer display-pc" src="img/separador-footer.png" alt="">
+
+
+        <div class="footer-content container">
+            <div class="footer-left">
+                <a href="/"><img src="/img/stokear-logo-blanco.png" alt="Logo Stokear Blanco"></a>
+                
+                <div>
+                    <p>Email: stokear@gmail.com</p>
+                    <p>Tel.: +54 9 11 6378 9279</p>
+                </div>
+                <p class="subtexto">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-right">
+                <div>
+                    <a href="/">Inicio</a>
+                    <a href="/nosotros.html">Sobre Nosotros</a>
+                </div>
+                <p class="subtexto display-mobile">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+                <a target="_blank" class="subtexto" href="https://juancruzbolatti.com">Página Web desarrollada por <span>Juan Bolatti</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokear - Soluciones de Seguridad Industrial</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <a href="/" class="logo">
+                <img class="display-pc" src="./img/stokear_logo.png" alt="Logo de Stokear">
+                <img class="display-mobile" src="./img/stokear-logo-mobile.png" alt="Logo de Stokear">
+            </a>
+
+            <nav class="navbar display-pc">
+                <a href="nosotros.html">Sobre Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <button onclick="scrolearA('contacto')">Contactanos</button>
+            </nav>
+
+            <nav class="nav-mobile display-mobile">
+                <div class="bars" onclick="changeBars(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="navbar-content">
+                    <a href="nosotros.html">Sobre Nosotros</a>
+                    <a href="productos.html">Productos</a>
+                    <button onclick="scrolearA('contacto')">Contactanos</button>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="hero container">
+        <div class="hero-texto">
+            <h1>Soluciones de <span>Seguridad</span><br>Industrial</h1>
+            <img src="img/separador-gris.png" alt="Linea de separacion de Stokear">
+            <p class="texto-gris">Descubrí nuestra gama de <a href="productos.html">productos</a> <br>y <a
+                    href="#contacto">contactanos</a> para más detalles!</p>
+        </div>
+
+        <div class="hero-cartel display-pc-block">
+            <h3>Compromiso con la Calidad <br>de Nuestro Servicio</h3>
+            <p class="texto-gris">Nos caracterizamos por la eficiencia y la calidad de nuestros productos, enfocandonos
+                en asegurar la confianza y conformidad de nuestros clientes. <br>¡Conocé más de <a
+                    href="nosotros.html">nosotros</a>!</p>
+        </div>
+    </section>
+
+    <div class="banner">
+        <img class="display-pc" src="/img/banner.png" alt="Banner de Stokear">
+        <img class="display-mobile" src="/img/banner-mobile.png" alt="Banner de Stokear para Celulares">
+    </div>
+
+    <section class="nosotros container">
+        <div class="nos-contenido">
+            <p class="texto-gris">Contamos con una basta experiencia en el diseño, desarrollo y fabricación de elementos
+                de protección para el sector industrial.</p>
+            <h2 class="subtitulo"><span>Stokear</span> <br>
+                es fruto de la búsqueda <br>
+                de la perfección y calidad</h2>
+            <a href="/nosotros.html" class="boton">
+                <p>Conocenos</p>
+                <div></div>
+            </a>
+
+        </div>
+
+        <div class="nos-imagen">
+            <img src="/img/nosotros.png" alt="">
+            <div class="nos-imagen-after">
+                <img src="/img/recurso_nosotros.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <img class="display-pc-block" src="img/separador-grande-gris.png" alt="">
+        <img class="display-mobile" src="img/separador-gris.png" alt="">
+    </div>
+
+    <section class="productos container">
+        <div class="prod-texto">
+            <h3 class="subtitulo">Productos</h3>
+            <div class="prod-botones">
+                <button id="prod-boton" class="texto-gris boton-activado"
+                    onclick="abrirProducto('menuProducto01', this)">Protección de Mano</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto02', this)">Indumentaria
+                    de Trabajo</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto03', this)">Calzado y
+                    Protección</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto04', this)">Protección
+                    Respiratoria <br>y Auditiva</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto05', this)">Protección
+                    Craneana</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto06', this)">Protección
+                    Visual</button>
+                <button id="prod-boton" class="texto-gris" onclick="abrirProducto('menuProducto07', this)">Protección
+                    Facial</button>
+                <button id="prod-boton" class="texto-gris"
+                    onclick="abrirProducto('menuProducto08', this)">Señalización</button>
+            </div>
+        </div>
+
+        <div class="prod-content">
+            <div class="prod-menu submenu-activado" id="menuProducto01">
+                <div class="prod-imagen">
+                    <img src="/img/producto_01.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Protección de Mano</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Guantes especializados para proteger tus manos de cortes, químicos y altas temperaturas con máxima seguridad y confort.</p>
+                    <a class="boton boton-azul" href="/productos.html">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto02">
+                <div class="prod-imagen">
+                    <img src="/img/producto_02.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Indumentaria de Trabajo</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Ropa diseñada para ofrecer protección, comodidad y durabilidad en entornos industriales. Resistencia y seguridad adaptadas a tus necesidades laborales.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('indumentaria')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto03">
+                <div class="prod-imagen">
+                    <img src="/img/producto_03.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Calzado y Protección</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Botas y zapatos resistentes que ofrecen protección y comodidad, garantizando el cuidado de tus pies en entornos exigentes.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('calzado')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto04">
+                <div class="prod-imagen">
+                    <img src="/img/producto_04.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Protección Respiratoria <br>y Auditiva</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Equipos diseñados para proteger tus vías respiratorias y oídos de ambientes con polvo, químicos o ruido excesivo, asegurando un entorno de trabajo más seguro.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('respiratoria')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto05">
+                <div class="prod-imagen">
+                    <img src="/img/producto_05.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Protección Craneana</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Cascos y equipos diseñados para proteger la cabeza de impactos y caídas, brindando seguridad en entornos de trabajo riesgosos.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('cascos')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto06">
+                <div class="prod-imagen">
+                    <img src="/img/producto_06.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Protección Visual</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Anteojos y visores especializados que resguardan tus ojos de impactos y partículas, ofreciendo una visión segura en cualquier entorno laboral.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('visual')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto07">
+                <div class="prod-imagen">
+                    <img src="/img/producto_07.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Protección Facial</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Equipos diseñados para resguardar tu rostro de impactos, salpicaduras y sustancias peligrosas, garantizando una protección integral en trabajos exigentes.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('facial')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="prod-menu" id="menuProducto08">
+                <div class="prod-imagen">
+                    <img src="/img/producto_08.png" alt="Imagen del menu de productos de Stokear">
+                    <p>Señalización</p>
+                </div>
+
+                <div class="prod-menu-texto">
+                    <p class="texto-gris">Soluciones de señalización claras y efectivas para indicar peligros, rutas de evacuación y áreas de riesgo, promoviendo la seguridad y la conciencia en el lugar de trabajo.</p>
+                    <a class="boton boton-azul" onclick="scrolearAProducto('senias')">
+                        <p>Ver Productos</p>
+                        <div></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clientes container">
+        <h4 class="texto-gris">Algunos de Nuestros Clientes</h4>
+
+        <div class="carousel-container">
+            <button class="carousel-button left" id="leftBtn"><img src="/img/arrow.png" alt=""></button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="/img/logo-cliente-01.png" alt="Logo 1" class="carousel-item">
+                    <img src="/img/logo-cliente-02.png" alt="Logo 2" class="carousel-item">
+                    <img src="/img/logo-cliente-03.png" alt="Logo 3" class="carousel-item">
+                    <img src="/img/logo-cliente-04.png" alt="Logo 4" class="carousel-item">
+                    <img src="/img/logo-cliente-05.png" alt="Logo 5" class="carousel-item">
+                    <img src="/img/logo-cliente-06.png" alt="Logo 6" class="carousel-item">
+                    <img src="/img/logo-cliente-07.png" alt="Logo 7" class="carousel-item">
+                    <img src="/img/logo-cliente-08.png" alt="Logo 8" class="carousel-item">
+                    <img src="/img/logo-cliente-09.png" alt="Logo 9" class="carousel-item">
+                </div>
+            </div>
+            <button class="carousel-button right" id="rightBtn"><img src="/img/arrow.png" alt=""></button>
+        </div>
+    </section>
+
+    <div class="separador">
+        <img class="display-pc-block" src="img/separador-grande-amarillo.png" alt="">
+        <img class="display-mobile" src="img/separador-gris.png" alt="">
+    </div>
+
+    <section class="contacto container" id="contacto">
+        <h3 class="subtitulo">Contactanos</h3>
+        <div class="contacto-content">
+            <div class="cont-info">
+                <div class="cont-dato">
+                    <p class="subtexto">Correo Electrónico</p>
+                    <p>stokear@gmail.com</p>
+                </div>
+                <div class="cont-dato">
+                    <p class="subtexto">Whatsapp y Teléfono</p>
+                    <p>+54 9 11 6378 9279</p>
+                </div>
+                <div class="cont-dato">
+                    <p class="subtexto">Horarios de Atención</p>
+                    <p>08:00 - 16:00 [Lun a Vie]</p>
+                </div>
+                <div class="cont-dato">
+                    <p class="subtexto">Envíos</p>
+                    <p>A todo el país [AR]</p>
+                    <p>Paises Limitrofes [Coordinar]</p>
+                </div>
+            </div>
+
+            <div class="cont-texto">
+                <p class="texto-gris">La experiencia en el manejo de mercadería personalizada nos ha llevado a alcanzar un gran objetivo: garantizar el servicio y la entrega de productos en los tiempos establecidos, siendo estos de los más ágiles del mercado.</p>
+                <p class="texto-gris">El trato personalizado que brindamos es percibido por nuestros clientes como un valor agregado, destacando a la empresa como líder en soluciones a medida.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <img class="separador-footer display-pc" src="img/separador-footer.png" alt="">
+
+
+        <div class="footer-content container">
+            <div class="footer-left">
+                <a href="/"><img src="/img/stokear-logo-blanco.png" alt="Logo Stokear Blanco"></a>
+                
+                <div>
+                    <p>Email: stokear@gmail.com</p>
+                    <p>Tel.: +54 9 11 6378 9279</p>
+                </div>
+                <p class="subtexto">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-right">
+                <div>
+                    <a href="/productos.html">Productos</a>
+                    <a href="/nosotros.html">Sobre Nosotros</a>
+                </div>
+                <p class="subtexto display-mobile">Copyright © 2024 - Stokear - Todos los derechos reservados</p>
+                <a target="_blank" class="subtexto" href="https://juancruzbolatti.com">Página Web desarrollada por <span>Juan Bolatti</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
