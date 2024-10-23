@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Página principal (home) -->
+   <url>
+      <loc>https://www.stokear.com.ar/</loc>
+      <lastmod>2024-10-24</lastmod>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Página de productos -->
+   <url>
+      <loc>https://www.stokear.com.ar/productos.html</loc>
+      <lastmod>2024-10-24</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Página "Sobre nosotros" -->
+   <url>
+      <loc>https://www.stokear.com.ar/nosotros.html</loc>
+      <lastmod>2024-10-24</lastmod>
+      <priority>0.6</priority>
+   </url>
+
+</urlset>
